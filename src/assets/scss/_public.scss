@@ -1,0 +1,96 @@
+@charset "UTF-8";
+//通用
+*{box-sizing: border-box;}
+input,button,select,textarea,a,input:focus,button:focus,select:focus,textarea:focus,a:focus{outline:none}
+textarea{resize:none}
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, optgroup, p, blockquote,
+figure, hr, menu, dir, thead, tbody, tfoot, th, td {margin:0; padding: 0;}
+ul,ol,li{ list-style-type: none; list-style-image: none; list-style: none;}
+select{cursor: pointer;}
+a{text-decoration: none; cursor: pointer;}
+table{width: 100%;}
+th{text-align: center;font-size: 0.875rem;color: #333;}
+html,body{
+  height: 100%;
+}
+body{
+  background: #eee;
+  font-family: 'pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+  font-size: .9rem;
+}
+.sunti{font-family: "simsun"}
+.fontArial{font-family: 'Arial'}
+/************************************************************************************************/
+
+.j-text-align{
+  text-align: center;
+}
+
+.el-row{
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.colorRed{
+  color: #e50000;
+}
+//滚动条
+.scroll{
+  /**滚动条**/
+  &::-webkit-scrollbar {
+    width: 8px;
+    &:hover{
+      width: 14px;
+    }
+  }
+  /** 滚动条传送**/
+  &::-webkit-scrollbar-track-piece {
+    width: 10px;
+    background-color: #fff;
+  }
+  /**拖动的部分**/
+  &::-webkit-scrollbar-thumb {
+    border: #c2c2c2 1px solid;
+    background: #ededed;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+    border-color: #b7b7b7;
+  }
+}
+.editArea{
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  right: 60px;
+  background:#fff;
+  padding: 3px;
+  z-index: 0;
+  .el-form--label-top .el-form-item__label{
+    padding: 0;
+  }
+  .el-form-item{
+    margin-bottom: 0;
+  }
+  .el-select .el-input{
+    width: 100% ;
+  }
+}
+.esri-editor__content{
+  min-height:7vh;
+}
+
+.esri-editor__header{
+  padding:0 2px;
+  height: auto;
+  height: 40px;
+}
